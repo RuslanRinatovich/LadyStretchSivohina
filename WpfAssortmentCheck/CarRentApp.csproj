@@ -98,53 +98,57 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Abonement.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Buy.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Category.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CategoryTrainer.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Order.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Partials\Abonement.cs" />
     <Compile Include="Models\Partials\Buy.cs" />
     <Compile Include="Models\Partials\Trainer.cs" />
     <Compile Include="Models\Partials\User.cs" />
+    <Compile Include="Models\Partials\YogaFeatPilatesBDEntities.cs" />
     <Compile Include="Models\Status.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StretchModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StretchModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StretchModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StretchModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StretchModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StretchModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TimeTable.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Trainer.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Visit.cs">
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\YogaPilatesModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>YogaPilatesModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\YogaPilatesModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>YogaPilatesModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\YogaPilatesModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>YogaPilatesModel.edmx</DependentUpon>
+      <DependentUpon>StretchModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\AbonementPage.xaml.cs">
       <DependentUpon>AbonementPage.xaml</DependentUpon>
@@ -336,12 +340,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Models\YogaPilatesModel.edmx">
+    <EntityDeploy Include="Models\StretchModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>YogaPilatesModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>StretchModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Models\YogaPilatesModel.edmx.diagram">
-      <DependentUpon>YogaPilatesModel.edmx</DependentUpon>
+    <None Include="Models\StretchModel.edmx.diagram">
+      <DependentUpon>StretchModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -392,22 +396,24 @@
     <Resource Include="Resources\1.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\YogaPilatesModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>YogaPilatesModel.edmx</DependentUpon>
-      <LastGenOutput>YogaPilatesModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\YogaPilatesModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>YogaPilatesModel.edmx</DependentUpon>
-      <LastGenOutput>YogaPilatesModel.cs</LastGenOutput>
-    </Content>
     <Resource Include="Resources\02_1.ico" />
     <Resource Include="Resources\logo.png" />
     <None Include="Resources\Image1.bmp" />
     <Resource Include="Resources\icons8-пилатес-16.ico" />
     <Resource Include="Resources\icons8-пилатес-50.png" />
     <Resource Include="Resources\icons8-пилатес-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\StretchModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StretchModel.edmx</DependentUpon>
+      <LastGenOutput>StretchModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\StretchModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StretchModel.edmx</DependentUpon>
+      <LastGenOutput>StretchModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.8.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.8.0\build\MaterialDesignThemes.targets')" />

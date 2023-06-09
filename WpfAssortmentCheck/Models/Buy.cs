@@ -19,7 +19,7 @@ namespace WpfAssortmentCheck.Models
         {
             this.Visits = new HashSet<Visit>();
         }
-       
+    
         public int Id { get; set; }
         public int AbonementId { get; set; }
         public System.DateTime DateTime { get; set; }

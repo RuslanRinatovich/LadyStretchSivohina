@@ -20,8 +20,7 @@ namespace WpfAssortmentCheck.Models
             this.Buys = new HashSet<Buy>();
             this.Orders = new HashSet<Order>();
         }
-     
-
+    
         public string UserName { get; set; }
         public string Password { get; set; }
         public string LastName { get; set; }

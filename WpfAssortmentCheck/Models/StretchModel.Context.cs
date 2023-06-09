@@ -19,18 +19,7 @@ namespace WpfAssortmentCheck.Models
             : base("name=YogaFeatPilatesBDEntities")
         {
         }
-        private static YogaFeatPilatesBDEntities _context;
-
-
-        public static YogaFeatPilatesBDEntities GetContext()
-        {
-            if (_context == null)
-            {
-                _context = new YogaFeatPilatesBDEntities();
-            }
-            return _context;
-        }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -42,6 +31,7 @@ namespace WpfAssortmentCheck.Models
         public virtual DbSet<CategoryTrainer> CategoryTrainers { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Status> Status { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TimeTable> TimeTables { get; set; }
         public virtual DbSet<Trainer> Trainers { get; set; }
         public virtual DbSet<User> Users { get; set; }
